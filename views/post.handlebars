@@ -1,0 +1,47 @@
+<h1>POST Request Received</h1>
+
+<p></p>
+
+{{! Query string table}}
+<table>
+	<thead>
+		<caption>
+			URL Query String Params
+		</caption>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each param}}
+			<tr>
+				<td>{{this.urlName}}</td>
+				<td>{{this.urlValue}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
+
+<p></p>
+
+{{! Request body table}}
+<table>
+	<thead>
+		<caption>
+			POST Body Params
+		</caption>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each param}}
+			<tr>
+				<td>{{this.jsonName}}</td>
+				<td>{{this.jsonValue}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

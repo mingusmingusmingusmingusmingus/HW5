@@ -1,0 +1,23 @@
+<h1>GET Request Received</h1>
+
+<p></p>
+
+<table>
+	<thead>
+		<caption>
+			URL Query String Params
+		</caption>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each param}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
